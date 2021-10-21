@@ -2,25 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Flask Web App</title>
+    <title>Convercion</title>
     <!-- BOOTSTRAP 4 CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/ai.jpg') }}">
+    <!-- ICON WEB -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
       <a class="navbar-brand" href="{{ url_for('home') }}">Convercion</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="{{ url_for('home') }}">Inicio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="{{ url_for('about') }}">Acerca de nosotros</a>
           </li>
         </ul>
@@ -34,6 +39,7 @@
     </div>
 
     <!-- SCRIPTS -->
+    <script src="{{url_for('static', filename='js/file.js')}}"></script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
   </body>
 </html>
